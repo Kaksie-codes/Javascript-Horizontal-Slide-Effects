@@ -1,27 +1,18 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-//   direction: 'vertical',
-//   loop: true,
-  slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-
-  // If we need pagination
-  pagination: {
+new Swiper(".swiper",{
+    slidesPerView: 3,
+    loop: true,  
+    spaceBetween: 24,
+     autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+    },
+     pagination: {
     el: '.swiper-pagination',
-    clickable: true,
+    clickable: true
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+})
